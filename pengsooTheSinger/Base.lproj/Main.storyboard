@@ -22,14 +22,16 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="232-mS-61N">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-x2-byE">
+                                        <rect key="frame" x="213" y="123" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyf-Tx-LWM" userLabel="Scroll Content">
-                                        <rect key="frame" x="-200" y="0.0" width="1000" height="375"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1000" height="375"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="psnoback" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-Om-DC0">
-                                                <rect key="frame" x="0.0" y="-50" width="325.5" height="525"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="O5m-Om-DC0" secondAttribute="height" multiplier="116:187" id="0sB-3U-BUP"/>
-                                                </constraints>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="psnoback" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-Om-DC0">
+                                                <rect key="frame" x="0.0" y="-50" width="338" height="525"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,9 +45,9 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="QKG-5T-FVx" firstAttribute="top" secondItem="Wyf-Tx-LWM" secondAttribute="top" id="2rk-rZ-DvG"/>
-                                    <constraint firstItem="Wyf-Tx-LWM" firstAttribute="trailing" secondItem="QKG-5T-FVx" secondAttribute="trailing" constant="-200" id="4r1-Ha-J55"/>
+                                    <constraint firstItem="Wyf-Tx-LWM" firstAttribute="trailing" secondItem="QKG-5T-FVx" secondAttribute="trailing" id="4r1-Ha-J55"/>
                                     <constraint firstItem="Wyf-Tx-LWM" firstAttribute="bottom" secondItem="QKG-5T-FVx" secondAttribute="bottom" id="5AI-GS-9hj"/>
-                                    <constraint firstItem="Wyf-Tx-LWM" firstAttribute="leading" secondItem="QKG-5T-FVx" secondAttribute="leading" constant="-200" id="V7K-lJ-HhO"/>
+                                    <constraint firstItem="Wyf-Tx-LWM" firstAttribute="leading" secondItem="QKG-5T-FVx" secondAttribute="leading" id="V7K-lJ-HhO"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="QKG-5T-FVx"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="NcP-0l-xGW"/>
@@ -69,6 +71,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="musicNote" destination="L5C-7t-5Bf" id="w6N-nw-eae"/>
+                        <outlet property="musicNote2" destination="8fk-nT-b8M" id="ja9-o2-ypw"/>
+                        <outlet property="pengSoo" destination="O5m-Om-DC0" id="RfX-sj-poA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
