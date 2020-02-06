@@ -21,12 +21,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         musicNote.alpha = 0
         musicNote2.alpha = 0
+        
     }
 }
 
 extension ViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        //print(scrollView.contentOffset)
+        print(scrollView.contentOffset)
         
         //When pengsoo arrived at (0,0)
         //Then show the music note

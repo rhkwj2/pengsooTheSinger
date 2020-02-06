@@ -19,43 +19,48 @@
                                 <rect key="frame" x="0.0" y="0.0" width="770" height="419"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="232-mS-61N">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIG-lR-AVq">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-x2-byE">
-                                        <rect key="frame" x="213" y="123" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyf-Tx-LWM" userLabel="Scroll Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="1000" height="375"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="psnoback" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-Om-DC0">
-                                                <rect key="frame" x="0.0" y="-50" width="338" height="525"/>
-                                            </imageView>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DzL-9J-wkH">
+                                        <rect key="frame" x="0.0" y="0.0" width="1100" height="375"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="O5m-Om-DC0" secondAttribute="bottom" constant="-100" id="6lt-Wp-iKL"/>
-                                            <constraint firstAttribute="width" constant="1000" id="Ymv-9W-Awd"/>
-                                            <constraint firstItem="O5m-Om-DC0" firstAttribute="top" secondItem="Wyf-Tx-LWM" secondAttribute="top" constant="-50" id="jUn-Ds-U3Q"/>
-                                            <constraint firstItem="O5m-Om-DC0" firstAttribute="leading" secondItem="Wyf-Tx-LWM" secondAttribute="leading" id="xXj-Oo-b2S"/>
+                                            <constraint firstAttribute="width" constant="1100" id="gSC-Ju-fhQ"/>
                                         </constraints>
                                     </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="psnoback" translatesAutoresizingMaskIntoConstraints="NO" id="2nD-GK-Psd">
+                                        <rect key="frame" x="450" y="18.5" width="192" height="338"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="192" id="wPo-Eg-VM8"/>
+                                            <constraint firstAttribute="height" constant="338" id="xKV-Su-6re"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icons8-music-50" translatesAutoresizingMaskIntoConstraints="NO" id="hLS-TZ-isP">
+                                        <rect key="frame" x="617" y="51" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QKG-5T-FVx" firstAttribute="top" secondItem="Wyf-Tx-LWM" secondAttribute="top" id="2rk-rZ-DvG"/>
-                                    <constraint firstItem="Wyf-Tx-LWM" firstAttribute="trailing" secondItem="QKG-5T-FVx" secondAttribute="trailing" id="4r1-Ha-J55"/>
-                                    <constraint firstItem="Wyf-Tx-LWM" firstAttribute="bottom" secondItem="QKG-5T-FVx" secondAttribute="bottom" id="5AI-GS-9hj"/>
-                                    <constraint firstItem="Wyf-Tx-LWM" firstAttribute="leading" secondItem="QKG-5T-FVx" secondAttribute="leading" id="V7K-lJ-HhO"/>
+                                    <constraint firstItem="DzL-9J-wkH" firstAttribute="trailing" secondItem="j5F-Yv-Lf0" secondAttribute="trailing" id="4IA-qo-1l3"/>
+                                    <constraint firstItem="DzL-9J-wkH" firstAttribute="top" secondItem="j5F-Yv-Lf0" secondAttribute="top" id="7Ot-cg-e5j"/>
+                                    <constraint firstItem="2nD-GK-Psd" firstAttribute="leading" secondItem="j5F-Yv-Lf0" secondAttribute="leading" constant="450" id="iYp-b2-Wdt"/>
+                                    <constraint firstItem="DzL-9J-wkH" firstAttribute="height" secondItem="qIG-lR-AVq" secondAttribute="height" id="pJG-Mq-jZm"/>
+                                    <constraint firstItem="DzL-9J-wkH" firstAttribute="leading" secondItem="j5F-Yv-Lf0" secondAttribute="leading" id="qmQ-TX-tQa"/>
+                                    <constraint firstItem="2nD-GK-Psd" firstAttribute="centerY" secondItem="CNV-a7-ZaB" secondAttribute="centerY" id="tBa-AG-gRf"/>
+                                    <constraint firstItem="DzL-9J-wkH" firstAttribute="bottom" secondItem="j5F-Yv-Lf0" secondAttribute="bottom" id="tWh-WV-UPm"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="QKG-5T-FVx"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="NcP-0l-xGW"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="j5F-Yv-Lf0"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="CNV-a7-ZaB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="contentOffset">
+                                        <point key="value" x="550" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qrD-aA-7aR"/>
+                                </connections>
                             </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icons8-music-50" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-7t-5Bf">
-                                <rect key="frame" x="534" y="28" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icons8-musical-notes-50" translatesAutoresizingMaskIntoConstraints="NO" id="8fk-nT-b8M">
                                 <rect key="frame" x="592" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,18 +68,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="232-mS-61N" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9W1-F2-lsm"/>
-                            <constraint firstItem="232-mS-61N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-200" id="BdJ-hg-jtE"/>
-                            <constraint firstItem="232-mS-61N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ona-WR-fLL"/>
-                            <constraint firstItem="Wyf-Tx-LWM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="a0X-Km-xeI"/>
-                            <constraint firstItem="232-mS-61N" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-200" id="fP1-M1-Sd4"/>
+                            <constraint firstItem="qIG-lR-AVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rbh-pL-62g"/>
+                            <constraint firstItem="qIG-lR-AVq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eww-7D-dzc"/>
+                            <constraint firstItem="qIG-lR-AVq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fxw-09-I5R"/>
+                            <constraint firstItem="qIG-lR-AVq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jMo-WC-HiN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="musicNote" destination="L5C-7t-5Bf" id="w6N-nw-eae"/>
+                        <outlet property="musicNote" destination="hLS-TZ-isP" id="Z3G-ag-yOR"/>
                         <outlet property="musicNote2" destination="8fk-nT-b8M" id="ja9-o2-ypw"/>
-                        <outlet property="pengSoo" destination="O5m-Om-DC0" id="RfX-sj-poA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
